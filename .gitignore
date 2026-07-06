@@ -1,0 +1,92 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+
+# CMake presets generated locally by Conan
+CMakeUserPresets.json
+
+# Conan 2 generated files
+conanbuild/
+conanbuildenv-*.bat
+conanbuildenv-*.ps1
+conanbuildenv-*.sh
+conanbuildenv-*.fish
+conanrun/
+conanrunenv-*.bat
+conanrunenv-*.ps1
+conanrunenv-*.sh
+conanrunenv-*.fish
+conan_toolchain.cmake
+conandeps_legacy.cmake
+CMakePresets.json
+
+# Conan 1 generated files, just in case
+conaninfo.txt
+conanbuildinfo.*
+conan.lock
+
+# Binaries and libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+
+# Test / coverage artifacts
+*.gcda
+*.gcno
+*.gcov
+coverage/
+lcov.info
+
+# IDEs and editors
+.vscode/
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / MSBuild
+Debug/
+Release/
+x64/
+x86/
+Win32/
+*.vcxproj.user
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Clangd / language server
+.cache/
+.clangd/
+compile_flags.txt
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
