@@ -10,7 +10,6 @@
 #include <string>
 #include <utility>
 
-namespace task1 {
 namespace {
 using asio::ip::tcp;
 using Json = nlohmann::json;
@@ -201,5 +200,3 @@ Json TicketMachineClient::sendRemoteRequest( const Json& request ) {
 
 	return Json::parse( response_line );
 }
-
-}  // namespace task1

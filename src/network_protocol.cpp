@@ -2,7 +2,7 @@
 
 #include <stdexcept>
 
-namespace task1::protocol {
+namespace protocol {
 namespace {
 
 Json requireObject( const Json& json, const std::string& field ) {
@@ -154,4 +154,4 @@ PurchaseError purchaseErrorFromString( const std::string& value ) {
 	throw std::runtime_error( "Unknown purchase error string: " + value );
 }
 
-}  // namespace task1::protocol
+}  // namespace protocol

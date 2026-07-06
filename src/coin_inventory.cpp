@@ -4,8 +4,6 @@
 #include <stdexcept>
 #include <utility>
 
-namespace task1 {
-
 namespace {
 
 void validateCoinEntry( Money denomination, int count ) {
@@ -104,5 +102,3 @@ Money CoinInventory::total() const {
 	}
 	return sum;
 }
-
-}  // namespace task1

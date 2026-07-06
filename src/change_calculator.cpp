@@ -3,7 +3,6 @@
 #include <limits>
 #include <vector>
 
-namespace task1 {
 namespace {
 
 struct CoinType {
@@ -131,5 +130,3 @@ std::optional< ChangeResult > ChangeCalculator::computeMinimalCoinChange( Money 
 
 	return reconstructResult( amount, coin_types, state.chosen_counts );
 }
-
-}  // namespace task1

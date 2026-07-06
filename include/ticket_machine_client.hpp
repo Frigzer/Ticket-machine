@@ -11,8 +11,6 @@
 #include <variant>
 #include <vector>
 
-namespace task1 {
-
 class TicketMachineClient {
 public:
 	explicit TicketMachineClient( TicketServer& server );
@@ -55,5 +53,3 @@ private:
 	std::variant< TicketServer*, RemoteEndpoint > backend_;
 	std::unique_ptr< RemoteConnection > remote_connection_;
 };
-
-}  // namespace task1

@@ -3,8 +3,6 @@
 #include <cstdint>
 #include <memory>
 
-namespace task1 {
-
 class TicketServer;
 
 class TicketServerHost {
@@ -27,5 +25,3 @@ private:
 	class Impl;
 	std::unique_ptr< Impl > impl_;
 };
-
-}  // namespace task1

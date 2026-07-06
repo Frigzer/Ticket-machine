@@ -4,8 +4,6 @@
 #include <algorithm>
 #include <unordered_map>
 
-namespace task1 {
-
 TicketServer::TicketServer( std::vector< Ticket > tickets, CoinInventory initial_cashbox,
                             std::chrono::seconds reservation_timeout, ClockFn clock )
     : tickets_( std::move( tickets ) ),
@@ -191,5 +189,3 @@ Reservation* TicketServer::findReservationById( ReservationId id ) {
 bool TicketServer::isReservationExpired( ReservationId reservation_id ) const {
 	return expired_reservation_ids_.contains( reservation_id );
 }
-
-}  // namespace task1

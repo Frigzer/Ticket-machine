@@ -4,8 +4,6 @@
 #include <filesystem>
 #include <span>
 
-namespace task1 {
-
 class ServerConsoleApp {
 public:
 	explicit ServerConsoleApp( std::span< char* const > args );
@@ -25,5 +23,3 @@ private:
 	std::filesystem::path data_file_path_{};
 	bool show_help_{ false };
 };
-
-}  // namespace task1

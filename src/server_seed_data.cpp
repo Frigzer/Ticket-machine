@@ -7,7 +7,6 @@
 #include <string>
 #include <unordered_set>
 
-namespace task1 {
 namespace {
 
 using json = nlohmann::json;
@@ -136,5 +135,3 @@ ServerSeedData ServerSeedDataLoader::loadFromFile( const std::filesystem::path& 
 	    .cashbox = parseCashbox( root.at( "cashbox" ) ),
 	};
 }
-
-}  // namespace task1

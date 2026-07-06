@@ -8,8 +8,6 @@
 #include <span>
 #include <string>
 
-namespace task1 {
-
 class TicketMachineClient;
 
 class ConsoleClientApp {
@@ -46,5 +44,3 @@ private:
 	bool show_help_{ false };
 	SessionState session_{};
 };
-
-}  // namespace task1

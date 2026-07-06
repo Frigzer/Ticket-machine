@@ -11,8 +11,6 @@
 #include <variant>
 #include <vector>
 
-namespace task1 {
-
 class TicketServer {
 public:
 	using TimePoint = std::chrono::steady_clock::time_point;
@@ -53,5 +51,3 @@ private:
 
 	ReservationId next_reservation_id_{ 1 };
 };
-
-}  // namespace task1

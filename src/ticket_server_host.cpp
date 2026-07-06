@@ -17,7 +17,6 @@
 #include <thread>
 #include <vector>
 
-namespace task1 {
 namespace {
 using asio::ip::tcp;
 using Json = nlohmann::json;
@@ -311,5 +310,3 @@ std::uint16_t TicketServerHost::port() const {
 bool TicketServerHost::isRunning() const {
 	return impl_->isRunning();
 }
-
-}  // namespace task1

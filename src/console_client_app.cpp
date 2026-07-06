@@ -15,7 +15,6 @@
 #include <string_view>
 #include <vector>
 
-namespace task1 {
 namespace {
 
 std::optional< std::uint16_t > parsePort( const std::string& value ) {
@@ -48,7 +47,7 @@ std::vector< std::string > splitTokens( const std::string& line ) {
 }
 
 void printHelp() {
-	std::cout << "Usage: task1 [--host HOST] [--port PORT]\n";
+	std::cout << "Usage: ticket-machine [--host HOST] [--port PORT]\n";
 }
 
 void printCommandHelp() {
@@ -413,5 +412,3 @@ std::optional< CustomerData > ConsoleClientApp::readCustomerData() {
 
 	return customer;
 }
-
-}  // namespace task1

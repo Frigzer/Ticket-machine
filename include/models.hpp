@@ -6,8 +6,6 @@
 #include <optional>
 #include <string>
 
-namespace task1 {
-
 using TicketId      = std::uint64_t;
 using ReservationId = std::uint64_t;
 using Money         = std::int64_t;
@@ -73,5 +71,3 @@ struct TicketAvailability {
 	Money price{ 0 };
 	int available_count{ 0 };
 };
-
-}  // namespace task1

@@ -17,7 +17,6 @@
 #include <string_view>
 #include <thread>
 
-namespace task1 {
 namespace {
 
 volatile std::sig_atomic_t& keepRunningFlag() {
@@ -54,7 +53,7 @@ std::optional< std::uint16_t > parsePort( const std::string& value ) {
 }
 
 void printHelp() {
-	std::cout << "Usage: task1_server [--port PORT] [--data FILE_OR_PATH]\n";
+	std::cout << "Usage: ticket-machine-server [--port PORT] [--data FILE_OR_PATH]\n";
 	std::cout << "Default data file: " << defaultDataFile().string() << '\n';
 	std::cout << "Relative values passed to --data are resolved inside: " << paths::dataDir.string() << '\n';
 }
@@ -143,5 +142,3 @@ void ServerConsoleApp::registerSignalHandlers() {
 void ServerConsoleApp::onSignal( int /*unused*/ ) {
 	keepRunningFlag() = 0;
 }
-
-}  // namespace task1

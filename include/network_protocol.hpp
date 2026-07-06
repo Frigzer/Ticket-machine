@@ -5,7 +5,7 @@
 
 #include <nlohmann/json.hpp>
 
-namespace task1::protocol {
+namespace protocol {
 
 using Json = nlohmann::json;
 
@@ -35,4 +35,4 @@ std::vector< TicketAvailability > availabilityListFromJson( const Json& json );
 std::string toString( PurchaseError error );
 PurchaseError purchaseErrorFromString( const std::string& value );
 
-}  // namespace task1::protocol
+}  // namespace protocol
