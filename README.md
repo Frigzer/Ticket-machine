@@ -85,6 +85,7 @@ Money values are represented as integer grosz values. For example, `350` means `
 │   ├── ticket_machine_client.cpp
 │   ├── ticket_server.cpp
 │   └── ticket_server_host.cpp
+├── tests/
 ├── CMakeLists.txt
 ├── conanfile.py
 └── README.md
